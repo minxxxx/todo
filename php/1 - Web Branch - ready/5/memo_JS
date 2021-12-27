@@ -1,0 +1,18 @@
+<script src=""></script>			js script
+<span onclick="">text</script>		js when action
+
+console.log("");					write in log console
+console.debug("");					write in debug console
+
+var toto = 42;						init a var
+var tab = new Array();				init a tab (all is object)
+
+var toto = document.getElementById("demo")
+document.style.fontSize = "25px";
+onclick="myFunction()"
+alert('toto');						print popup
+eval(string)						evaluate a string
+
+AJAX/jQuery
+
+<head></head>

@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Its over 9000</title>
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	</head>
+	<body>
+		<h2 style="margin-left: 102px;">Calculator</h2>
+		<input id="left" type="text" name="left" placeholder="Left member"/>
+		<select id="sign">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input id="right" type="text" name="left" placeholder="Right member"/>
+		<br/><br/>
+		<input id="sub" style="width: 310px;" type="submit" name="Try me!" value="Try me!"/>
+		<script>
+			setInterval(function(){ alert("Please, use me..."); }, 30000);
+
+			$('#sub').click(function ()
+			{
+				var left = $('#left').val();
+				var sign = $('#sign').val();
+				var right = $('#right').val();
+				if (!is_valid(left) || !is_valid(right))
+				{
+					alert("Error :(");
+					console.log("Error :(");
+				}
+				else
+				{
+					if ((sign == "/" || sign == "%")
+					&& right == 0)
+					{
+						alert("It's over 9000!");
+						console.log("It’s over 9000!");
+					}
+					else
+					{
+						alert(eval(left + sign + right));
+						console.log(eval(left + sign + right));
+					}
+				}
+			});
+
+			function is_valid(nb)
+			{
+				if(parseFloat(nb) != parseInt(nb) || isNaN(nb) || nb < 0)
+						return false;
+				return true;
+			}
+		</script>
+	</body>
+</html>

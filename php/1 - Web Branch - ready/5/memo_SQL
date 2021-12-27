@@ -1,0 +1,31 @@
+mysql -uroot -p
+SOURCE file
+
+show_databases;			show all the db
+use NAME;				choose which to use
+show tables;			show all tables
+describe NAME			print description from NAME
+
+SELECT
+limit NB 				limit the result
+order by VALUE ORDER	value = what to order ; order:ASC/DESC...
+as
+where
+count
+max
+min
+join					inner join / left join / right join
+group by
+
+DELETE
+
+INSERT INTO table (column1, column2) VALUES (value1, values2)
+
+UPDATE genre SET nom = "test" WHERE id_genre=29 
+
+CREATE TABLE name (id INT PRIMARY KEY AUTO_INCREMENT)
+
+Primary key / Foreign key
+
+CREATE DATABASE IF NOT EXISTS `name`
+DROP DATABASE IF EXISTS `name`

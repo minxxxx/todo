@@ -1,0 +1,82 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- balloon.html                                       :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: fpetras <marvin@42.fr>                     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2018/01/20 09:30:19 by fpetras           #+#    #+#            -->
+<!-- Updated: 2018/01/20 10:50:50 by fpetras          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Come blow this balloon</title>
+		<style>
+			.balloon
+			{
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="balloon" id="balloon"></div>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+		$(document).ready(function()
+		{
+			var colors = ['red', 'green', 'blue'];
+			var rgb = 0;
+			var height = 200;
+			var width = height;
+			$('#balloon').click(click_funct);
+			$('#balloon').mouseout(mouse_funct);
+			function click_funct()
+			{
+				height += 10;
+				width += 10;
+				if (height > 420)
+				{
+					rgb++;
+					if (rgb > 2)
+						rgb = 0;
+					height = 200;
+					width = 200;
+					balloon.style.background = colors[rgb];
+					balloon.style.height = height + "px";
+					balloon.style.width = width + "px";
+				}
+				else
+				{
+					rgb++;
+					if (rgb > 2)
+						rgb = 0;
+					balloon.style.background = colors[rgb];
+					balloon.style.height = height + "px";
+					balloon.style.width = width + "px";
+				}
+			}
+			function mouse_funct()
+			{
+				height -= 5;
+				width -= 5;
+				if (height >= 200)
+				{
+					rgb--;
+					if (rgb < 0)
+						rgb = 2;
+					balloon.style.background = colors[rgb];
+					balloon.style.height = height + "px";
+					balloon.style.width = width + "px";
+				}
+			}
+		});
+		</script>
+	</body>
+</html>

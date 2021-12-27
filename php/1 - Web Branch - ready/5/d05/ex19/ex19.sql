@@ -1,0 +1,1 @@
+SELECT DATEDIFF(MAX(hm.date), MIN(hm.date)) "uptime" FROM historique_membre hm GROUP BY hm.id_film;

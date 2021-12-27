@@ -1,0 +1,1 @@
+SELECT count(hm.date) "films" FROM historique_membre hm WHERE hm.date BETWEEN "1999-03-01" AND "2007-07-27" OR (day(hm.date) = 24 AND month(hm.date) = 12);

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#balloon {
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				border-radius: 100%;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="balloon"></div>
+		<script>
+
+		$(document).ready(function() {
+			var balloon = document.getElementById("balloon");
+
+			function returnColor(color, action) {
+				color = color.substring(4, color.length - 1);
+				color = color.split(',');
+				if (parseInt(color[0]) > 0)
+					return (action == "click" ? "green" : "blue");
+				else if (parseInt(color[1]) > 0)
+					return (action == "click" ? "blue" : "red");
+				else if (parseInt(color[2]) > 0)
+					return (action == "click" ? "red" : "green");
+				else return "red";
+			}
+
+			function modifyBalloon(action) {
+				var w = $("#balloon").width();
+				var h = $("#balloon").height();
+				var color = $("#balloon").css("background-color");
+
+				if (action == "click") {
+					$("#balloon").css("width", w + 10 + "px");
+					$("#balloon").css("height",  h + 10 + "px");
+				} else if (action == "mouseout" && w > 205 && h > 205) {
+					$("#balloon").css("width", w - 5 + "px");
+					$("#balloon").css("height", h - 5 + "px");
+				}
+				if ($("#balloon").width() > 420 || $("#balloon").height() > 420) {
+					$("#balloon").css("width", "200px");
+					$("#balloon").css("height", "200px");
+				}
+
+				$("#balloon").css("background-color", returnColor(color, action));
+			}
+
+			$("#balloon").click(function() { modifyBalloon("click"); });
+			$("#balloon").mouseout(function() { modifyBalloon("mouseout"); });
+		});
+		</script>
+	</body>
+</html>

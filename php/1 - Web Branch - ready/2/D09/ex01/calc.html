@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<form>
+			<input id="first" type="text" placeholder="first" />
+			<select id="op">
+				<option value="plus">+</option>
+				<option value="minus">-</option>
+				<option value="mult">*</option>
+				<option value="div">/</option>
+				<option value="mod">%</option>
+			</select>
+			<input type="text" id="second" placeholder="second" /><br />
+			<input type="submit" value="Try me!" />
+		</form>
+
+		<script>
+			setInterval(function(){ alert("Please, use me..."); }, 30000);
+
+			var form = document.querySelector("form");
+			var first = document.querySelector("#first");
+			var op = document.querySelector("#op");
+			var second = document.querySelector("#second");
+
+			function myParseInt(val) {
+				if (/^\+?[0-9]+$/.test(val))
+					return Number(val);
+				return NaN;
+			}
+
+			function calc(first, second, op) {
+				if (op == "plus")
+					return first + second;
+				else if (op == "minus")
+					return first - second;
+				else if (op == "mult")
+					return first * second;
+				else {
+					if ((op == "div" || op == "mod") && second == 0)
+						return "It's over 9000!";
+					else if (op == "div")
+						return first / second;
+					else if (op == "mod")
+						return first % second;
+					else
+						return "Error :(";
+				}
+			}
+
+			form.addEventListener("submit", function(e) {
+				e.preventDefault();
+
+				var firstOp = myParseInt(first.value);
+				var secondOp = myParseInt(second.value);
+
+				if (!isNaN(firstOp) && !isNaN(secondOp)) {
+					var res = calc(firstOp, secondOp, op.value);
+					console.log(res);
+					alert(res);
+				} else {
+					console.log("Error :(");
+					alert("Error :(");
+				}
+
+				this.reset();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+.headerContent:hover { 
+    filter: brightness(50%);
+}
+
+.Title {
+    font-size: 70px;
+    font-weight: bold;
+    color: white
+}
+
+.Image {
+    height:400px;
+    width: 100%
+}
+
+.CenterTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.HeaderMarge {
+    margin: 5% 0 0 0;
+}

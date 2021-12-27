@@ -1,0 +1,26 @@
+//
+//  config.xcconfig
+//  MusicRoom
+//
+//  Created by Etienne Tranchier on 23/10/2018.
+//  Copyright © 2018 Etienne Tranchier. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+DZR_SDK=$(SRCROOT)/DeezerSDK
+LIBRARY_SEARCH_PATHS=$(DZR_SDK)
+USER_HEADER_SEARCH_PATHS=$(DZR_SDK)/include/**
+OTHER_LDFLAGS=$(inherited) -lDeezer -all_load -FGoogle
+
+PRODUCT_NAME = MusicRoom
+PRODUCT_BUNDLE_IDENTIFIER = com.jdavin.MusicRoom
+CODE_SIGN_IDENTITY = iPhone Developer
+
+SWIFT_VERSION = 4.0
+
+IPHONEOS_DEPLOYMENT_TARGET = 11.2
+
+INFOPLIST_FILE = $(SRCROOT)/MusicRoom/Info.plist
+

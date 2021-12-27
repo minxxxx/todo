@@ -1,0 +1,247 @@
+@font-face {
+    font-family: myBebasNeue;
+    src: url(../fonts/BebasNeue.woff);
+}
+
+@font-face {
+    font-family: myLeafy;
+    src: url(../fonts/Leafy.woff);
+}
+
+@font-face {
+    font-family: myChlakh;
+    src: url(../fonts/Chlakh.ttf);
+}
+
+@font-face {
+    font-family: myTN;
+    src: url(../fonts/TuesdayNight.otf) format('truetype');
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: myBebasNeue;
+    letter-spacing: 2px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: white;
+    color: #9CC2AF;
+}
+
+.top-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 197px;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px;
+    border-bottom-color: #C5DFC5;
+}
+
+.top-txt {
+    font-family: myLeafy;
+    color: #5f9285;
+    text-align: center;
+    font-size: 100px;
+    margin: 30px 0px;
+}
+
+.top-sub {
+    font-family: myChlakh;
+    color: grey;
+    text-align: center;
+    font-size: 25px;
+    margin: -35px 0px;
+    letter-spacing: 5px;
+}
+
+.img-arrow {
+    width: 20px;
+}
+
+.img-bag {
+    width: 12px;
+}
+
+.main {
+    position: absolute;
+    z-index: -1;
+    top: 220px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.window {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    height: 430px;
+    background: white;
+    border: 1px solid lightgrey;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.window:hover {
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.20);
+}
+
+.bigger {
+    height: 470px;
+}
+
+.title {
+    position: relative;
+    top: 47px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    text-align: center;
+    font-family: myBebasNeue;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.title-txt {
+    position: relative;
+    display: inline;
+    border: solid 2px black;
+    color: black;
+    margin: 0px 0px;
+    padding: 0px 5px 0px 10px;
+    background-color: white;
+}
+
+.form {
+    position: relative;
+    top: 85px;
+    margin: 10px 10px;
+    width: 200px;
+    height: 40px;
+    border: solid 1px lightgrey;
+    border-radius: 0;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1px 7px 2px 7px;
+    font-size: 11px;
+    background: whitesmoke;
+}
+
+.form-button {
+    position: relative;
+    top: 90px;
+    margin: 10px 10px;
+    width: 200px;
+    height: 40px;
+    border: solid 1px lightgrey;
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+.form-button:hover {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+    background-color: #5f9285;
+    color: white;
+}
+
+.invalid {
+    border: solid 1px #CD5C5C;
+    background-color: #f1c3c3;
+}
+
+.search-menu {
+    padding-bottom: 0px;
+}
+
+.search-bar {
+    width: 130px;
+    height: 16px;
+    font-size: 16px;
+    border: none;
+    border-bottom: solid 1px #9CC2AF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1px 7px 2px 7px;
+    font-size: 11px;
+    background: white;
+}
+
+.search-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: white;
+}
+
+.img-loupe {
+    position: relative;
+    height: 10px;
+    left: -2.5px;
+    top: 1px;
+}

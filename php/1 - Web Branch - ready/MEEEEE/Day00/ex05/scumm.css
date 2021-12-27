@@ -1,0 +1,222 @@
+body {
+    background-color: #505050;
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-color: #909090;
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 10px 10px 16px #000000;
+}
+
+.box.top {
+    width: 1421px;
+    height: 137px;
+    top: 17px;
+    left: 234px;
+}
+
+.box.left {
+    width: 140px;
+    height: 425px;
+    top: 174px;
+    left: 264px;
+}
+
+.box.middle {
+    width: 1020px;
+    height: 582px;
+    top: 174px;
+    left: 434px;
+}
+
+.box.right {
+    width: 140px;
+    height: 425px;
+    top: 174px;
+    left: 1484px;
+}
+
+.box.overlay {
+    background-color: #8CFD8E;
+    width: 520px;
+    height: 170px;
+    top: 680px;
+    left: 189px;
+}
+
+.img {
+    position: absolute;
+}
+
+.img.doft42 {
+    width: 422px;
+    top: 10px;
+    left: 12px;
+}
+
+.img.loupe {
+    width: 256px;
+    top: 10px;
+    left: 1134px;
+}
+
+.img.reload {
+    width: 20px;
+    top: 10px;
+    left: 1390px;
+}
+
+.img.close {
+    width: 20px;
+    top: 108px;
+    left: 1390px;
+}
+
+.img.arrow {
+    width: 70px;
+    top: 15px;
+    left: 32px;
+}
+
+.img.main {
+    width: 70px;
+    top: 95px;
+    left: 32px;
+}
+
+.img.oeil {
+    width: 70px;
+    top: 170px;
+    left: 27px;
+    border: 5px solid red;
+    border-radius: 4px;
+}
+
+.img.outil {
+    width: 70px;
+    top: 250px;
+    left: 32px;
+}
+
+.img.chat {
+    width: 70px;
+    top: 330px;
+    left: 32px;
+}
+
+.img.book {
+    width: 70px;
+    top: 15px;
+    left: 35px;
+}
+
+.img.towel {
+    width: 70px;
+    top: 121px;
+    left: 35px;
+}
+
+.img.cluster {
+    width: 1000px;
+    height: 95%;
+    top: 10px;
+    left: 10px;
+}
+
+.mur {
+    background-image: url("resources/brick.jpg");
+    position: absolute;
+    width: 120px;
+    height: 72px;
+    top: 178px;
+    left: 10px;
+}
+
+.overlay-txt {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.dordi {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.ordis {
+    text-shadow: 5px 5px 7px red;
+}
+
+.entrez {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.overlay-italic {
+    position: absolute;
+    top: 47px;
+    left: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15.6px;
+    font-style: italic;
+}
+
+.formulaire {
+    position: absolute;
+    top: 85px;
+    left: 12px;
+}
+
+.form-txt {
+    width: 380px;
+    height: 21px;
+    border-style: inset;
+    border-width: 2.2px;
+}
+
+.form-button {
+    position: absolute;
+    top: 0px;
+    left: 391px;
+    width: 78px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #9A9A9A;
+    background-color: #E6E6E6;
+    font-size: 13px;
+}
+
+.chair {
+    position: fixed;
+    top: 506px;
+    left: 766px;
+    width: 127px;
+    height: 223px;
+}
+
+.apple {
+    position: fixed;
+    top: 491px;
+    left: 1226px;
+    width: 203px;
+    height: 183px;
+}
+
+.active {
+    border: 5px solid greenyellow;
+    border-radius: 4px;
+}
+
+.img.chaiseprise {
+    width: 100px;
+    top: 300px;
+    left: 20px;
+}

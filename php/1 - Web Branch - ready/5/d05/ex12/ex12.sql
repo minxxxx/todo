@@ -1,0 +1,1 @@
+SELECT fp.nom, fp.prenom FROM fiche_personne fp WHERE fp.nom LIKE "%-%" OR fp.prenom LIKE "%-%" ORDER BY fp.nom, fp.prenom;

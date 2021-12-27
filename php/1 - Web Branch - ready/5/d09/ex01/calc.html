@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Its over 9000</title>
+	</head>
+	<body>
+		<h2 style="margin-left: 102px;">Calculator</h2>
+		<input id="left" type="text" name="left" placeholder="Left member"/>
+		<select id="sign">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input id="right" type="text" name="left" placeholder="Right member"/>
+		<br/><br/>
+		<input style="width: 310px;" type="submit" name="Try me!" value="Try me!" onclick="ft_click()"/>
+		<script>
+			setInterval(function(){ alert("Please, use me..."); }, 30000);
+			function ft_click()
+			{
+				var left = document.getElementById("left");
+				var sign = document.getElementById("sign");
+				var right = document.getElementById("right");
+				if (!is_valid(left.value) || !is_valid(right.value))
+				{
+					alert("Error :(");
+					console.log("Error :(");
+				}
+				else
+				{
+					if ((sign.value == "/" || sign.value == "%")
+					&& right.value == 0)
+					{
+						alert("It's over 9000!");
+						console.log("It’s over 9000!");
+					}
+					else
+					{
+						alert(eval(left.value + sign.value + right.value));
+						console.log(eval(left.value + sign.value + right.value));
+					}
+				}
+			}
+
+			function is_valid(nb)
+			{
+				if(parseFloat(nb) != parseInt(nb) || isNaN(nb) || nb < 0)
+						return false;
+				return true;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Js Lesson 0</title>
+  </head>
+  <body>
+    <div id="balloon" style="height: 200px; width: 200px; background-color: red; border-radius: 10000px;"></div>
+  	<script>
+  		var circle_diameter = 200;
+  		var colour_array = ["red", "green", "blue"];
+  		var current_colour = 0;
+  		var draw_balloon = document.getElementById("balloon");
+
+  		var setColour = function() {
+  			if (current_colour < 0)
+  				current_colour = 2;
+  			else if (current_colour > 2)
+  				current_colour = 0;
+  			draw_balloon.style.backgroundColor = colour_array[current_colour];
+  		}
+
+  		var setSize = function ()
+      {
+  			if (circle_diameter < 200 || circle_diameter > 420)
+  				circle_diameter = 200;
+  			draw_balloon.style.width = circle_diameter + "px";
+  			draw_balloon.style.height = circle_diameter + "px";
+  		}
+
+  		draw_balloon.addEventListener("click",
+      function()
+      {
+  			circle_diameter += 10;
+  			current_colour++;
+  			setSize();
+  			setColour();
+  		});
+
+  		draw_balloon.addEventListener("mouseleave",
+      function()
+      {
+  			circle_diameter -= 5;
+  			current_colour--;
+  			setSize();
+  			setColour();
+  		});
+
+  	</script>
+
+  </body>
+</html>

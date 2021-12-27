@@ -1,0 +1,50 @@
+require_once 'fileex';
+
+public $foo;
+protected $_foo2;
+private $_foo3;
+
+self::function				exec the function as static
+static::function			exec the function as dynamic
+
+function __construct {}
+function __destruct {}
+
+$instance = new toto();
+
+print($instance->foo);
+
+getToto {return $this->_toto}
+setToto($var) {$this->_toto = $var}
+
+call a function with 'infinite' params => put an array (named $kwargs)
+
+$this->var			 		ref to the instance
+self::var					ref to the class
+
+static function				only in the class (not in instance)
+
+__get		  				set the function when error public/private on get
+__set		  				set the function when error public/private on set
+__toString					set the function when echo the class
+__invoke					set the function when call the class like a function
+__clone						set the function when use clone keyword 
+__call		  				set the function when call a method non existent
+__callstatic				set the function when call a static method non existent
+
+Class child extends mother	create a child class
+parent::ft					call a mother function
+
+abstract class				the class can be used ONLY as mother
+abstract function			it's like a proto. all child must have this function defined
+final class					the class can't be used as mother
+final function				the function CAN'T be redefined
+
+interface Itoto				like an abstract class (it can contain only abstract function)
+class toto implements Itoto
+
+trait						creation like a class
+use serializeJSON, serializeHTML {serializeJSON::serialize insteadof serializeHTML;}
+
+class Exception	try catch
+ReflexionClass				information about classes 

@@ -1,0 +1,70 @@
+#header {
+   /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fb/Grand_Isle_Skateboarders.jpg");*/
+    background-image: url("http://i.imgur.com/YW7rAuB.jpg");
+    background-repeat: no-repeat;
+/*    background-attachment: fixed;*/
+    background-position: center;
+    color:gray;
+    text-align:center;
+    padding:50px;
+	border-style: groove;
+}
+#nav {
+	font-family: "Arial", Helvetica, sans-serif;
+    line-height:30px;
+    background-color:#eeeeee;
+	text-align: center;
+    width:100%;
+    padding:5px;
+}
+#nav a {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#section {
+	line-height: 200%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width:100%;
+    padding:10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+table, tr {
+	width: 100%;
+}
+table td {
+	width: 20%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.prod_desc {
+	font-size: 1em;
+	text-overflow: ellipsis;
+}
+table img {
+	max-width: 60%;
+	max-height: 100px;
+}
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }

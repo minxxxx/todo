@@ -1,0 +1,214 @@
+@font-face {
+    font-family: myBebasNeue;
+    src: url(../fonts/BebasNeue.woff);
+}
+
+@font-face {
+    font-family: myLeafy;
+    src: url(../fonts/Leafy.woff);
+}
+
+@font-face {
+    font-family: myChlakh;
+    src: url(../fonts/Chlakh.ttf);
+}
+
+@font-face {
+    font-family: myTN;
+    src: url(../fonts/TuesdayNight.otf) format('truetype');
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: myBebasNeue;
+    letter-spacing: 2px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: white;
+    color: #9CC2AF;
+}
+
+.top-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 197px;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px;
+    border-bottom-color: #C5DFC5;
+}
+
+.top-txt {
+    font-family: myLeafy;
+    color: #5f9285;
+    text-align: center;
+    font-size: 100px;
+    margin: 30px 0px;
+}
+
+.top-sub {
+    font-family: myChlakh;
+    color: grey;
+    text-align: center;
+    font-size: 25px;
+    margin: -35px 0px;
+    letter-spacing: 5px;
+}
+
+.img-arrow {
+    width: 20px;
+}
+
+.img-bag {
+    width: 12px;
+}
+
+.main {
+    position: absolute;
+    z-index: -1;
+    top: 220px;
+    left: 0;
+}
+
+.home-img {
+    width: 100%;
+}
+
+.home-txt {
+    position: absolute;
+    width: 450px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    background: white;
+    border: solid lightgrey 1px;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.20);
+}
+
+.home-txt:hover {
+    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.3);
+}
+
+.home-txt h1 {
+    text-align: center;
+    font-family: myBebasNeue;
+    font-size: 50px;
+}
+
+.home-txt-par {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: justify;
+    margin: 0px 0px 35px 0px;
+}
+
+.home-txt p {
+    display: inline;
+    font-family: Helvetica;
+    line-height: 30px;
+    color: #5c5c5c;
+}
+
+.home-txt h2 {
+    text-align: end;
+    font-family: myTN;
+    line-height: 30px;
+    color: black;
+}
+
+.search-menu {
+    padding-bottom: 0px;
+}
+
+.search-bar {
+    width: 130px;
+    height: 16px;
+    font-size: 16px;
+    border: none;
+    border-bottom: solid 1px #9CC2AF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1px 7px 2px 7px;
+    font-size: 11px;
+    background: white;
+}
+
+.search-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: white;
+}
+
+.search-button:hover {
+}
+
+.img-loupe {
+    position: relative;
+    height: 10px;
+    left: -2.5px;
+    top: 1px;
+}

@@ -1,0 +1,24 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class is helping us switch to 3D, using right hand rule.
+
+The Vector class takes an array with an origin ('orig') and destination parameter ('dest').
+Both parameters represent a point in space, which is an instance of the Vertex class (see doc).
+
+The Vector class has various methods:
+magnitude() -> returns the magnitude of the current instance
+normalize() -> normalizes the vector and returns a fresh instance
+add(Vector $rhs) -> adds the new vector to the instance and returns a new one
+sub(Vector $rhs) -> substracts the new vector from the instance and returns a new one
+opposite() -> returns the opposite vector of the instance
+scalarProduct($k) -> returns the scalar product of the instance and the number given as parameter
+dotProduct($rhs) -> returns the scalar product of the instance and the vector given as parameter
+cos($rhs) -> returns the cosinus of the vector and the instance
+crossProduct($rhs) -> returns the cross product of the vector and the instance
+
+
+Exemple:
+$vtx1 = new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+$vtx2 = new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0 ) );
+
+$vtc = new Vector( array( 'orig' => $vtx1, 'dest' => $vtx2 ) );
+---------------------------------------------------------------------- Vector ->

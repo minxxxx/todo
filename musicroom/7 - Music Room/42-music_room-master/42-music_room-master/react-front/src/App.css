@@ -1,0 +1,55 @@
+.App {
+    min-width:1296px
+}
+.ant-layout-header {
+    padding: 0 0 0 0 !important
+}
+
+.HeaderApp {
+    width: 100%;
+    height: 660px !important
+}
+
+.HeaderImage {
+    width: 100%;
+    background-color:black;
+    height: inherit;
+}
+
+iframe {
+    background-color:black;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: #00695c !important;
+}
+
+.ant-btn-primary{
+    background-color: #00695c !important;
+    border-color:  #00695c !important;
+} 
+.ant-switch-checked {
+    background-color: #00695c !important;
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+    color: #00695c !important;
+}
+
+.ant-tabs-ink-bar {
+    background-color: #00695c !important;
+}
+
+.ant-menu-horizontal {
+    background-color: transparent !important;
+}
+
+.disconnect{
+    position: absolute;
+    top: 3%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.FoorterLink {
+    width:100%
+}

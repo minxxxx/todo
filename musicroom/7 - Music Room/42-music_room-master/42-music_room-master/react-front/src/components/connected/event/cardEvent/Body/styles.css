@@ -1,0 +1,71 @@
+.titleBig {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 0 2% 0 2%;
+    display: inline;
+}
+
+.titleMedium {
+    font-weight: bold;
+    font-size: 21px;
+    padding: 0 2% 0 2%;
+    display: inline;
+}
+
+.bodyContent {
+    width: 60%;
+    margin: 2% 20% 0 20%;
+}
+
+.iconBlockBody {
+    height:80px;
+    border-left: 1px solid #00695c;
+}
+
+.iconBlockBody div {
+    display: inline-block;
+    padding: 2% 0 0 4%;
+}
+
+.descriptionBlockBody {
+    text-align: center;
+    margin: 5% 0 0 0
+}
+
+.inlineMember {
+    padding: 0 0.5% 0 0;
+    display: inline-block;
+}
+
+.avatarMember {
+    font-size: 30px
+}
+
+.previewMember {
+    width: 25%;
+
+}
+.previewMemberLogin {
+    width: 100%;
+    margin: 2% 0 0 0 
+}
+
+.listMember {
+    width: 100%;
+    height: 140px;
+}
+
+.cardMember {
+    padding: 1% 0 0 2%;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+}
+.cardMemberImage {
+    display: block;
+}
+
+.cardMemberLogin {
+    padding: 0 17% 0 25%;
+    display: block;
+}

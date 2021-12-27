@@ -1,0 +1,39 @@
+body {background-color: grey;}
+h1 {text-align: center;}
+td {font-style: bold;}
+.cell {
+	position: relative;
+	border: 5px solid black;
+	width: 5%;
+	height: 5%;
+}
+.empty_cell {
+	position: relative;
+	width: 5%;
+	height: 5%;
+}
+.symbol {
+	position: relative;
+	font-style: bold;
+	text-align: center;
+}
+.number {
+	position: relative;
+	font-size: 0.75vw;
+	text-align: left;
+}
+.weight {
+	position: relative;
+	font-size: 0.75vw;
+	text-align: right;
+}
+.red {background-color: red;}
+.orange {background-color: orange;}
+.yellow {background-color: yellow;}
+.green {background-color: green;}
+.lightblue {background-color: lightblue;}
+.blue {background-color: blue;}
+.violet {background-color: violet;}
+.purple {background-color: purple;}
+.pink {background-color: pink;}
+.darkred {background-color: darkred;}

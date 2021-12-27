@@ -1,0 +1,36 @@
+.facebook_button{
+	width:100%;
+	margin:2%;
+	background-color:rgb(76, 105, 186);
+	color:white;
+	padding: 2%;
+	font-size:1vw;
+	font-weight: bold;
+}
+.facebook_button:hover {
+	background-color: #01579b;
+}
+
+.google_button{
+	width:100%;
+	margin:2%;
+	background-color:rgb(209, 72, 54);
+	color:white;
+	padding: 2%;
+	font-size:1vw;
+	font-weight: bold;
+}
+.google_button:hover{
+	background-color: #d32f2f;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
+    border-bottom: 2px solid #00695c !important;
+      color: #00695c !important;
+  }
+
+
+.ant-btn:hover {
+	border: 1px solid #00695c !important;
+	color: #00695c !important;
+  }

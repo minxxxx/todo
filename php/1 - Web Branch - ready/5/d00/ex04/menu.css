@@ -1,0 +1,42 @@
+body
+{
+	background-color: grey;
+}
+
+#title
+{
+	font-size: 50px;
+	font-weight: bold;
+    text-shadow: 2px 2px 2px white;
+}
+
+.wave
+{
+	margin-left: 135px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.subtitle
+{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.list
+{
+	margin-left: 40px;
+	margin-top: 10px;
+	width: 200px;
+	text-align: center;
+}
+
+#button
+{
+	margin-top: 50px;
+	margin-left: 100px;
+}

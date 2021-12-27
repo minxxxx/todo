@@ -1,0 +1,42 @@
+  #page-middle {
+    margin-top: 35%;
+  }
+  
+  body {
+	  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fb/Grand_Isle_Skateboarders.jpg");
+	  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+  input {
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 200px;
+  }
+  
+  #connect-button {
+    padding: 15px;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
+  table {
+    text-align: center;
+    padding: 10px;
+  }

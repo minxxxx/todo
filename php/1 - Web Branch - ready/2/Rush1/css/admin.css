@@ -1,0 +1,55 @@
+nav {
+	font-family: "Arial", Helvetica, sans-serif;
+	line-height:30px;
+	background-color:#eeeeee;
+	text-align: center;
+	width:100%;
+	padding:5px;
+}
+table {
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+nav a {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#products tr {
+	width: 100%;
+}
+#products td {
+	width: 20%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.prod_desc {
+	font-size: 1em;
+	text-overflow: ellipsis;
+}
+#products img {
+	max-width: 70%;
+	max-height: 100px;
+}
+
+
+
+#users tr {
+	width: 100%;
+}
+#users td {
+	width: 20%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1em;
+}
+
+#add {
+	width: 100%;
+}
+#add td {
+	width: 50%;
+	text-align: left;
+}

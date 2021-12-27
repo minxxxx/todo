@@ -1,0 +1,31 @@
+.navBar{
+    position: absolute;
+    top: 550px;
+    left:50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+}
+
+.CardContent {
+    width: 96%;
+    margin: 0 0 0 5%;
+}
+.MenuCard {
+    color: #e0e0e0;
+    opacity:0.8
+}
+.MenuCard:hover {
+    transform: scale(1.01) !important;
+    color:white;
+    opacity:1
+}
+
+.MenuCardText {
+    font-size: 2vw;
+    margin: 0 3% 0 0;
+ }
+
+.MenuCardTextSmall {
+    font-size: 2vw;
+    margin: 0 3% 0 10%;
+ }

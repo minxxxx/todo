@@ -1,0 +1,16 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class represente the point on space.
+
+You can build an instance by passing an array with abscissa, ordinate and depth
+new Vertex(array("x" => 10, "y" => 20, "z" => 30));
+
+Optionally, you can put "w" (default : 1.0) and/or a Color Instance (default : white) :
+new Vertex(array("z" => 10, "color" => Color(array("rgb" => 16777215))));
+
+All values are left as is.
+Any other use is undefined behaviour.
+
+You can set "verbose" as true for see builds informations.
+
+The set and get methods are availables for x, y, z, w and color
+---------------------------------------------------------------------- Vertex ->

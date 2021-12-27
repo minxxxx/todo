@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Js Lesson 1</title>
+    <script>
+  	window.onload = function() {
+  		var Lf_No = document.getElementById("left_No");
+  		var Oper = document.getElementById("Oper");
+  		var Rt_No = document.getElementById("right_No");
+  		var tryMe = document.getElementById("try_me");
+
+  		window.setInterval(function(){
+  			alert("Please, use me...");
+  		}, 30000);
+
+  		var show = function(text) {
+  			console.log(text);
+  			alert(text);
+  		}
+
+      function isNumeric(n)
+      {
+          return !isNaN(parseFloat(n)) && isFinite(n);
+      }
+
+  		tryMe.addEventListener("click", function() {
+  			firstVal = parseInt(Lf_No.value);
+  			opVal = Oper.value;
+  			secondVal = parseInt(Rt_No.value);
+  			var result = eval(firstVal + opVal + secondVal);
+  			if ((isNaN(firstVal) || isNaN(secondVal) )
+  				|| (firstVal < 0 || secondVal < 0))
+  			{
+  				show("Error :(");
+  			} else if ((opVal === "/" && secondVal === 0) || (secondVal === 0 && opVal === "%")) {
+  				show("It's over 9000!");
+  			}
+        else if (firstVal != "e" || firstVal != "E" || secondVal != "e" || secondVal != "E")
+				{
+          show(result);
+				}
+				else
+					show("Error :(");
+  		});
+  	};
+  	</script>
+  </head>
+  <body>
+    <input type = "number" id="left_No" />
+  	<select id="Oper">
+  		<option value="+">+</option>
+  		<option value="-">-</option>
+  		<option value="*">*</option>
+  		<option value="/">/</option>
+  		<option value="%">%</option>
+  	</select>
+  	<input type = "number" id="right_No" />
+  	<input id="try_me" type="submit" value="Try me!"/>
+  </body>
+</html>

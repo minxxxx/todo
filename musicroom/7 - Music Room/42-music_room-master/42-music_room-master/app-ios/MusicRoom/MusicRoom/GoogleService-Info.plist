@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>364296834753-pad6vaq5ih3uhitdc4agm5pq5iurkh21.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.364296834753-pad6vaq5ih3uhitdc4agm5pq5iurkh21</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC_Hr6kTcjOB-FA60g8e1sy2t1e7iSNlKM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>364296834753</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jdavin.MusicRoom</string>
+	<key>PROJECT_ID</key>
+	<string>come-over-211712</string>
+	<key>STORAGE_BUCKET</key>
+	<string>come-over-211712.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<false/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<false/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:364296834753:ios:97e60f7fbf8ff02b</string>
+	<key>DATABASE_URL</key>
+	<string>https://come-over-211712.firebaseio.com</string>
+</dict>
+</plist>

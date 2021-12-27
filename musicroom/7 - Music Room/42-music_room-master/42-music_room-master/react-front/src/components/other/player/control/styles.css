@@ -1,0 +1,18 @@
+.playerAction {
+    font-size: 36px;
+}
+
+.playerAction:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color:#212121;
+}
+
+.playerSubAction {
+    font-size: 18px;
+    padding: 40%
+}
+
+.playerSubAction:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color:#212121;
+}

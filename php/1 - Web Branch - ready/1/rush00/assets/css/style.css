@@ -1,0 +1,193 @@
+/* 
+	Page générale
+*/
+body{
+	background-color: #666666;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;width: 100%;
+	min-height: 100%;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+div{
+	background-color:#CECECE;
+	border-radius: 5px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	justify-content: space-between;
+}
+#content{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+}
+#haut{
+	width: 100%;
+    height : 15%;
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+ }
+#milieu{
+	width: 80%;	
+	height: 70%;
+	background-color: transparent;
+	text-align: center;
+	margin: auto;
+}
+footer{
+   margin:auto; 
+   position: relative;
+   text-align: right;
+   padding-bottom: 0;
+   bottom: 0;
+   height: 0%;
+ }
+ /* 
+ 	Menu
+ */
+ #menu li{
+ 	display: inline;
+ 	font-size: 2vw;
+ 	height: 50%;
+ 	width: 10%;
+ 	text-align: center;
+ }
+ #menu{
+ 	text-align:center;
+ }
+ /* 
+ 	Rectangle noir
+ */
+ .hr{
+ 	height: 20px;
+ 	background-color: #AB0000;
+ 	width: 100%;
+ 	display: block;
+ }
+ /* 
+ 	Connexion & cie
+ */
+ .block-icon{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+a:hover{
+	cursor: pointer;
+	color: #AB0000;
+}
+.icon{
+	height: 32px;
+	width: 32px;
+	margin: auto;
+	display: block;
+}
+#up_link{
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+/* 
+	Page de connexion 
+*/
+label{
+	display: inline-block;
+}
+form{
+	display: inline-block;
+	width: 100%;
+}
+
+/*
+	ALERTS
+ */
+
+div.alert {
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.alert.alert-error {
+	background-color: #e74c3c;
+	color: #5c060b;
+	border: solid #c0392b 1px;
+}
+
+div.alert.alert-success {
+	background-color: #2ecc71;
+	color: #0c4914;
+	border: solid #27ae60 1px;
+}
+
+/*
+	Dans liste des articles
+*/
+table{
+	width: 50%;
+	margin: auto;
+}
+.img_category {
+	max-width: 30%;
+}
+th, td {
+    border-bottom: 2px solid #ddd;
+}
+
+.button {
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-radius: 4px;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+.button.disabled {
+	opacity: 0.6;
+	color: #333!important;
+}
+
+input, textarea, select {
+	display: inline-block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input {
+	height: 20px;
+}

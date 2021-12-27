@@ -1,0 +1,3 @@
+**Piscine PHP/** It's many small projects for learn PHP
+
+Difficulty 8

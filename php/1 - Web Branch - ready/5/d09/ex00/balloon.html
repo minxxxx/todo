@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<style>
+		#balloon {background: red; width: 200px; height: 200px; border-radius: 100%;}
+		</style>
+	</head>
+	<body>
+		<div id="balloon" onClick="clck()" onMouseOut="mseout()"></div>
+		<script>
+			function clck()
+			{
+				var id = document.getElementById("balloon");
+				var newsize = id.offsetWidth;
+				newsize += 10;
+				id.style.width = newsize + "px";
+				id.style.height = newsize + "px";
+				if (newsize > 420)
+				{
+				 	id.style.width = "200px";
+				 	id.style.height = "200px";
+				}
+				if (id.style.background == "green")
+					id.style.background = "blue";
+				else if (id.style.background == "blue")
+					id.style.background = "red";
+				else
+					id.style.background = "green";
+			}
+			function mseout()
+			{
+				var id = document.getElementById("balloon");
+				var newsize = id.offsetWidth;
+				newsize -= 5;
+				if (newsize >= 200)
+				{
+					id.style.width = newsize + "px";
+					id.style.height = newsize + "px";
+				}
+				if (id.style.background == "green")
+					id.style.background = "red";
+				else if (id.style.background == "blue")
+					id.style.background = "green";
+				else
+					id.style.background = "blue";
+			}
+		</script>
+	</body>
+</html>

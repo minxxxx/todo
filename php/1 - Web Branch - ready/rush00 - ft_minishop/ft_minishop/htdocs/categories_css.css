@@ -1,0 +1,46 @@
+.cat-header{
+	height: 55px;
+	font-family: Arial, Helvetica, serif;
+	color: #000000;
+	text-align: center;
+	font-size: 45px;
+}
+
+.cat-item-box{
+	width: 248px;
+	height: 260px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.cat-item-box div{
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 100%;
+	border-radius: 18px;
+	border: 3px solid;
+	text-align: center;
+	border-color: #635E5C;
+	background-color: #736E6C;
+}
+.cat-item-box a{
+	color: orange;
+}
+.cat-item-box div img {
+	margin-top: 15px;
+	width: 200px;
+	height: 200px;
+}
+.cat-item-box div div {
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 30px;
+	border-radius: 0px;
+	border: 0px solid;
+	text-align: center;
+	border-color: inherit;
+	background-color: inherit;
+	font-family: Arial, Helvetica, serif;
+	font-size: 20px;
+}

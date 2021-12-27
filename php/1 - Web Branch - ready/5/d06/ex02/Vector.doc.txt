@@ -1,0 +1,43 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class represente the direction and the movements on space.
+
+You can build an instance by passing an array with a destination vertex.
+new Vector(array("dest" => ---dest_vertex---));
+
+Optionally, you can specify an orign vertex (default : vertex(x=0, y=0, z=0, w=1)).
+new Vector(array("dest" => ---dest_vertex---, "orig" => ---orig_vertex---));
+
+All values are left as is.
+Any other use is undefined behaviour.
+
+You can set "verbose" as true for see builds informations.
+
+The get methods are availables for x, y, z and w.
+
+float magnitude() :
+	  return the vector lenght
+
+Vector normalize() :
+	   return a vector copy as standardized (if already then just return a copy)
+
+Vector add(Vector $rhs) : 
+	   return the sum vector.
+
+Vector sub(Vector $rhs) : 
+	   return the sub vector.
+
+Vector opposite() : 
+	   return the opposite vector.
+
+Vector scalarProduct($k) :
+	   return the mult vector with scalar.
+
+Vector dotProduct(Vector $rhs) :
+	   return the mult vector of two vectors.
+
+float cos(Vector $rhs) :
+	  return the angle cosine between two vectors.
+
+Vector crossProduct(Vector $rhs) :
+	   return the cross product between two vectors
+---------------------------------------------------------------------- Vector ->

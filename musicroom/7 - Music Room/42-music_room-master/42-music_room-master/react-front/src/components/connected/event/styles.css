@@ -1,0 +1,25 @@
+div.ant-tabs-tab:hover {
+    color:#26a69a !important;
+}
+
+
+.SimpleBgHovernuCard {
+    color: #e0e0e0;
+    opacity:0.8
+}
+
+.SimpleBgHover:hover {
+    transform: scale(1.01) !important;
+    color:#26a69a;
+    opacity:1
+}
+
+.textStyle {
+    font-size: 2vw;
+    margin: 0 3% 0 0;
+ }
+
+ .cardStyle {
+    text-align: center;
+    opacity:0.8
+}

@@ -1,0 +1,8 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class creates a point in space with 3 coordinates 'x', 'y' and 'z'.
+And 2 optional parameters 'w' and 'color'. Color is an instance of the Color class (see doc).
+
+Exemple:
+$color = new Color(array("red" => 100, "green" => 30, "blue" => 215));
+$point = new Vertex(array("x" => 10, "y" => 10, "z" => 10, "color" => $color));
+---------------------------------------------------------------------- Vertex ->

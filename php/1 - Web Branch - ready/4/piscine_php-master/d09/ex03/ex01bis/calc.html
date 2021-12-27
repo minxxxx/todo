@@ -1,0 +1,66 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- calc.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: fpetras <marvin@42.fr>                     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2018/01/20 09:44:30 by fpetras           #+#    #+#            -->
+<!-- Updated: 2018/01/20 10:51:10 by fpetras          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>It's over 9000</title>
+	</head>
+	<body>
+		<input id="num1">
+		<select id="op">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input id="num2">
+		<input type="submit" id="try_me" value="Try me!">
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+		$(document).ready(function()
+		{
+			setInterval(use_me_funct, 30000);
+			$('#try_me').click(calculate_funct);
+			function calculate_funct()
+			{
+				a = parseInt($('#num1').val());
+				opt = $('#op').val();
+				b = parseInt($('#num2').val());
+				var result = eval(a + opt + b);
+				if (a < 0 || b < 0 || isNaN(a) || isNaN(b))
+				{
+					alert("Error :(");
+					console.log("Error :(");
+				}
+				else if ((opt == "/" || opt == "%") && b == 0)
+				{
+					alert("It's over 9000!");
+					console.log("It's over 9000!");
+				}
+				else
+				{
+					alert(result);
+					console.log(result);
+				}
+			}
+			function use_me_funct()
+			{
+				alert("Please, use me...");
+				console.log("Please, use me...");
+			}
+		});
+		</script>
+	</body>
+</html>

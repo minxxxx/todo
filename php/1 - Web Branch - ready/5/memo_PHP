@@ -1,0 +1,29 @@
+echo print							like printf
+print_r								print more things
+
+$tab = array("un", deux")			init a tab
+$tab = array("key1" => "value1")	init a struct
+
+function ft_add($P1, $P1)
+{
+	return $P1 + $P2;
+}
+
+if / else							like in c
+foreach($argv as $k => $v)			k = key ; v = value
+
+eval		  	 	   				exec code directly
+===									same as == but with type verification
+!==									same as != but with type verification
+"/to_search/"						regex
+$_GET["name"]						get var whith specified key
+$_COOKIE							global var
+$_SESSION							global var
+session_start()						create/restore the session id (PHPSESSID)
+include("file.php");				include a file
+
+mysql_connect						Connection
+mysql_error							Return error
+mysql_select_db						select the db	
+mysql_query							Send a request
+mysql_real_escape_string			escape all chars from input

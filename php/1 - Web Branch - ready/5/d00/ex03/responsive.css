@@ -1,0 +1,87 @@
+.firstcells
+{
+	/*width: 60px;*/
+	width: 4%;
+	/*height: 18px;*/
+	height: 1%;
+	/*font-size: 15px;*/
+	font-size: 2.5vmin;
+}
+
+.otherscells
+{
+	width: 5%;
+	/*width: 60px;*/
+	height: 5%;
+	/*height: 60px;*/
+	font-size: 3vmin;
+	/*font-size: 22px;*/
+}
+
+.weight
+{
+	text-align: right;
+	font-weight: lighter;
+	font-size: 2vmin;
+	/*font-size: 12px;*/
+	margin: 0;
+}
+
+.nber
+{
+	text-align: left;
+	font-weight: lighter;
+	font-size: 2vmin;
+/*	font-size: 12px;*/
+	margin: 0;
+}
+
+.green
+{
+	background-color: green;
+}
+
+.orange
+{
+	background-color: orange;
+}
+
+.yellow
+{
+	background-color: yellow;
+}
+
+.pink
+{
+	background-color: pink;
+}
+
+.purple
+{
+	background-color: purple;
+}
+
+.grey
+{
+	background-color: grey;
+}
+
+.blue
+{
+	background-color: blue;
+}
+
+.teal
+{
+	background-color: teal;
+}
+
+.light_green
+{
+	background-color: #64FE2E;
+}
+
+.brown
+{
+	background-color: #8A2908;
+}

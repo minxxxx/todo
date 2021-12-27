@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>JQuery</title>
+		<style>
+		#balloon {background: red; width: 200px; height: 200px; border-radius: 100%;}
+		</style>
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	</head>
+	<body>
+		<div id="balloon"></div>
+		<script>
+			$(document).ready() //wait document fully loaded
+
+			$("#balloon").click(function ()
+			{
+				//match only int
+				var newsize = $("#balloon").css("width").match(/(.*)px/)[1];
+				newsize = parseInt(newsize) + 10;
+				if (newsize > 420)
+					newsize = 200;
+				$("#balloon").css("width", newsize + "px");
+				$("#balloon").css("height", newsize + "px");
+
+				// background-color return rgb value
+			 	if ($("#balloon").css("background-color") == 'rgb(0, 128, 0)')
+			 		$("#balloon").css("background-color", 'rgb(0, 0, 255)');
+			 	else if ($("#balloon").css("background-color") == 'rgb(0, 0, 255)')
+			 		$("#balloon").css("background-color", 'rgb(255, 0, 0)');
+			 	else
+			 		$("#balloon").css("background-color", 'rgb(0, 128, 0)');
+			});
+
+			$("#balloon").mouseout(function ()
+			{
+				var newsize = $('#balloon').css('width').match(/(.*)px/)[1];
+				newsize = parseInt(newsize) - 5;
+				if (newsize >= 200)
+				{
+					$("#balloon").css("width", newsize + "px");
+					$("#balloon").css("height", newsize + "px");
+				}
+			 	if ($("#balloon").css("background-color") == 'rgb(0, 128, 0)')
+			 		$("#balloon").css("background-color", 'rgb(255, 0, 0)');
+			 	else if ($("#balloon").css("background-color") == 'rgb(0, 0, 255)')
+			 		$("#balloon").css("background-color", 'rgb(0, 128, 0)');
+			 	else
+					$("#balloon").css("background-color", 'rgb(0, 0, 255)');
+			});
+		</script>
+	</body>
+</html>

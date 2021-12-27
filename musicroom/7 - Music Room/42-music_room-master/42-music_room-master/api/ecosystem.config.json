@@ -1,0 +1,17 @@
+{
+  "apps" : {
+      "name"        : "token",
+      "script"      : "./app.js",
+      "watch"       : true,
+      "ignore_watch" : ["./public", "public", "/public", "./logs"],
+      "watch_options": {
+          "usePolling": true
+      },
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production" : {
+       "NODE_ENV": "production"
+    }
+  }
+}

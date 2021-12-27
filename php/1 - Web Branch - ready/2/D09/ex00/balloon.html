@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#balloon {
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				border-radius: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="balloon"></div>
+		<script>
+			var balloon = document.getElementById("balloon");
+
+			function returnColor(color, action) {
+				color = color.substring(4, color.length - 1);
+				color = color.split(',');
+				if (parseInt(color[0]) > 0)
+					return (action == "click" ? "green" : "blue");
+				else if (parseInt(color[1]) > 0)
+					return (action == "click" ? "blue" : "red");
+				else if (parseInt(color[2]) > 0)
+					return (action == "click" ? "red" : "green");
+				else return "red";
+			}
+
+			function modifyBalloon(obj, action) {
+				var thisStyle = window.getComputedStyle(obj);
+				var w = obj.offsetWidth;
+				var h = obj.offsetHeight;
+				var color = thisStyle.getPropertyValue("background-color");
+
+				if (action == "click") {
+					obj.style.width = w + 10 + "px";
+					obj.style.height = h + 10 + "px";
+				} else if (action == "mouseout" && w > 205 && h > 205) {
+					obj.style.width = w - 5 + "px";
+					obj.style.height = h - 5 + "px";
+				}
+				if (obj.offsetWidth > 420 || obj.offsetHeight > 420) {
+					obj.style.width = "200px";
+					obj.style.height = "200px";
+				}
+
+				obj.style.backgroundColor = returnColor(color, action);
+			}
+
+			balloon.addEventListener("click", function() { modifyBalloon(this, "click"); });
+			balloon.addEventListener("mouseout", function() { modifyBalloon(this, "mouseout"); });
+		</script>
+	</body>
+</html>

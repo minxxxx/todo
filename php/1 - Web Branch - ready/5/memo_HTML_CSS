@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+SYNTAX :
+<html></html>
+<head></head>
+<body></body>
+
+BEACONS : 
+<title>						define the window title (in the head)
+<style></style> 			style define (in the head)
+<br/>		  	 	  		= '\n'
+<hr/>		  	 	  		separator
+
+OPTIONS:
+<body bgcolor="color"; background="url">
+<div class="NAME"></div>	define a class
+<div id="NAME"></div>		define an id
+<div style="style">			define the div style
+<link rel="stylesheet" type="text/css" href="doft.css">
+<img src="src" alt="name"	print an img (hove is possible)
+<form action="" method=""><input type="" name="" placeholder="" value="" method=""> search bar
+<li> list
+
+<select><option value="name">name</option></select> deroul. list
+
+TAB:
+<table>						create a tab
+<tr>						create new cell in the tab
+<th>						new header in the cell (center + bold) (opt: colspan="" => col width)
+<td>						new data in the cell (left-align + normal)
+colspan="x"					the cell will take x normal case
+
+#name (for define id)
+.name {
+margin: 1px; (possible margin-top/right/left/bottom)
+padding: 1px;
+border: 1px;
+}
+
+text-align: center/left/right/justify
+color:
+font-size:1px
+font-style: normal/italic/oblique
+font-weight: normal/bold/lighter
+font-family:Courrier/Monospace/Arial....
+
+ADAPTIVE FONT:
+1vw = 1% of the window width
+1vh = 1% of the window height
+1vmin = the smaller between vw/vh
+1vmin = the larger between vw/vh
+OTHERS (padding/margin/width/height) : just put it in %

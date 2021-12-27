@@ -1,0 +1,33 @@
+
+.back_category{
+	margin-left: 250px;
+	width: 250px;
+	margin-top: 20px;
+	height: 35px;
+	text-align: center;
+}
+.back_category a{
+	font-family: Arial, Helvetica, serif;
+	color: #990066;
+	font-size: 22px;
+}
+
+.item_img{
+	width: 200px;
+	height: 200px;
+	margin-left: 275px;
+	margin-top: 2px;
+	box-shadow: 2px 2px 20px black;
+}
+
+.item_info{
+	font-family: Arial, Helvetica, serif;
+	margin-left: 250px;
+	width: 250px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.to_cart a{
+	color: green;
+}
